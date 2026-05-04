@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Digital - Wemerson Colins </title>
+
+    <!-- Favicon (Ícone da aba do navegador) -->
+    <link rel="icon" href="https://i.ibb.co/TFKXtM4/Gemini-Generated-Image-749nd4749nd4749n-Photoroom.png" type="image/png">
+
+    <!-- Meta Tags para Compartilhamento (WhatsApp, Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Publio Nogueira - Representante Comercial">
+    <meta property="og:description" content="Norte Representações - Conectando marcas ao mercado. Acesse meus contatos e conheça as marcas que represento.">
+    <meta property="og:image" content="https://i.ibb.co/TFKXtM4/Gemini-Generated-Image-749nd4749nd4749n-Photoroom.png">
+    <meta property="og:type" content="profile">
+
+    <!-- Meta Tags para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Publio Nogueira - Representante Comercial">
+    <meta name="twitter:description" content="Norte Representações - Conectando marcas ao mercado.">
+    <meta name="twitter:image" content="https://i.ibb.co/TFKXtM4/Gemini-Generated-Image-749nd4749nd4749n-Photoroom.png">
+    
+    <!-- Google Fonts: Cinzel para títulos clássicos, Montserrat para o resto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* =========================================
+           Variáveis de Cor e Tipografia
+           ========================================= */
+        :root {
+            --bg-color: #121212; /* Fundo principal escuro */
+            --card-bg: #1a1a1a; /* Fundo do cartão levemente mais claro */
+            --gold-base: #D4AF37; /* Dourado mais claro e clássico */
+            --gold-light: #F3E280;
+            --gold-dark: #8a6914;
+            --text-light: #e0e0e0;
+            --text-muted: #a0a0a0;
+            
+            --font-title: 'Cinzel', serif;
+            --font-main: 'Montserrat', sans-serif;
+            
+            /* Gradiente dourado reutilizável (Brilho revertido ao original) */
+            --gold-gradient: linear-gradient(to right, var(--gold-dark), var(--gold-light), var(--gold-base), var(--gold-light), var(--gold-dark));
+        }
+
+        /* =========================================
+           Reset e Configurações Globais
+           ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            /* Padrão geométrico escuro sutil ao fundo */
+            background-image: 
+                radial-gradient(#222 1px, transparent 1px),
+                radial-gradient(#222 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            
+            /* Centraliza o cartão na tela para Desktop */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-light);
+            padding: 20px;
+        }
+
+        /* Classes Utilitárias */
+        .text-gold {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent; /* Fallback */
+            display: inline-block;
+        }
+
+        /* =========================================
+           Container do Cartão (Mobile First)
+           ========================================= */
+        .card-container {
+            width: 100%;
+            max-width: 400px; /* Largura típica de celular */
+            background-color: var(--card-bg);
+            /* Gradiente sutil de fundo simulando material escuro */
+            background: linear-gradient(145deg, #1f1f1f, #121212);
+            border-radius: 35px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 
+                        0 0 0 1px rgba(198, 147, 32, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* =========================================
+           Seção: Cabeçalho (Header)
+           ========================================= */
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .logo-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border: 2px solid var(--gold-base);
+            border-radius: 15px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        .logo-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 2px;
+        }
+
+        .header h2 {
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            font-size: 0.65rem;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* Linha Curva Divisória (SVG) */
+        .curved-divider {
+            width: 100%;
+            height: 25px;
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        /* =========================================
+           Seção: Informações Pessoais
+           ========================================= */
+        .personal-info {
+            text-align: center;
+            padding: 0 20px;
+            margin-bottom: 35px;
+        }
+
+        .personal-info h3 {
+            font-family: var(--font-title);
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #E6C54F; /* Dourado levemente mais brilhoso e claro */
+        }
+
+        .personal-info p {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: var(--text-light);
+        }
+
+        /* =========================================
+           Seção: Botões de Ação
+           ========================================= */
+        .actions {
+            padding: 0 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center; /* Centraliza o texto */
+            width: 100%;
+            padding: 16px 15px 16px 55px; /* Padding esquerdo de 55px garante que o texto nunca encoste no ícone */
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--gold-base);
+            border-radius: 50px; /* Formato pílula */
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.82rem; /* Levemente menor para caber melhor em telas estreitas */
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn span {
+            word-break: break-word; /* Permite que e-mails muito longos quebrem linha em telas minúsculas */
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .btn:hover, .btn:active {
+            background: rgba(198, 147, 32, 0.1);
+            transform: scale(0.98);
+        }
+
+        /* Círculo do ícone posicionado à esquerda */
+        .btn-icon {
+            position: absolute;
+            left: 15px; /* Fixa à esquerda */
+            width: 32px;
+            height: 32px;
+            border: 1px solid var(--gold-base);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-icon i {
+            font-size: 1rem;
+        }
+
+        /* =========================================
+           Seção: Rodapé / Marcas Representadas
+           ========================================= */
+        .footer-brands {
+            margin: 35px 25px 30px;
+            padding: 20px 15px;
+            border: 1px solid var(--gold-base);
+            border-radius: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-brands h4 {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #E6C54F; /* Dourado levemente mais brilhoso e claro */
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .brands-grid img {
+            max-width: 100%;
+            height: auto;
+            max-height: 35px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .brands-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        /* =========================================
+           Seção: Redes Sociais
+           ========================================= */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            border: 1px solid var(--gold-base);
+            border-radius: 50%;
+            color: var(--gold-base);
+            font-size: 1.3rem;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: rgba(198, 147, 32, 0.1);
+            transform: translateY(-3px) scale(1.05);
+            color: var(--gold-light);
+            border-color: var(--gold-light);
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="card-container">
+        
+        <!-- CABEÇALHO -->
+        <header class="header">
+            <div class="logo-box">
+                <!-- Placeholder para a Logo -->
+                <img src="https://i.ibb.co/JWsFPJWq/Gemini-Generated-Image-iqmt78iqmt78iqmt-removebg-preview.png" alt="Logo Colins Representações">
+            </div>
+            <h1 class="text-gold">COLINS</h1>
+            <h2>REPRESENTAÇÕES</h2>
+            <p>CONECTANDO MARCAS AO MERCADO</p>
+        </header>
+
+        <!-- DIVISOR CURVO ELEGANTE (SVG) -->
+        <svg class="curved-divider" viewBox="0 0 100 15" preserveAspectRatio="none">
+            <!-- A curva em si -->
+            <path d="M0 0 Q 50 25 100 0" fill="transparent" stroke="url(#goldGrad)" stroke-width="1.2"/>
+            <!-- Definição do gradiente dourado para a linha -->
+            <defs>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#8a6914" />
+                    <stop offset="50%" stop-color="#F3E280" />
+                    <stop offset="100%" stop-color="#8a6914" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <!-- INFORMAÇÕES PESSOAIS -->
+        <section class="personal-info">
+            <!-- Removida a classe text-gold -->
+            <h3>WEMERSON COLINS</h3>
+            <p>REPRESENTANTE COMERCIAL</p>
+        </section>
+
+        <!-- BOTÕES DE AÇÃO -->
+        <nav class="actions">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5599991745807" target="_blank" rel="noopener noreferrer" class="btn">
+                <div class="btn-icon">
+                    <i class="fab fa-whatsapp text-gold"></i>
+                </div>
+                <span>(99) 99174-5807</span>
+            </a>
+
+            <!-- E-mail -->
+            <a href="mailto:wemersoncolins@yahoo.cm.br" class="btn">
+                <div class="btn-icon">
+                    <i class="fas fa-envelope text-gold"></i>
+                </div>
+                <span>wemersoncolins@yahoo.cm.br</span>
+            </a>
+
+            <!-- Salvar Contato -->
+            <a href="#" class="btn" onclick="baixarContato(event)">
+                <div class="btn-icon">
+                    <i class="fas fa-address-book text-gold"></i>
+                </div>
+                <span>ADICIONAR AOS CONTATOS</span>
+            </a>
+
+            <!-- Novo Botão (Bloco Adicional) -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn">
+                <div class="btn-icon">
+                    <i class="fas fa-link text-gold"></i>
+                </div>
+                <span>NOVO BOTÃO AQUI</span>
+            </a>
+        </nav>
+
+        <!-- MARCAS REPRESENTADAS -->
+        <footer class="footer-brands">
+            <!-- Removida a classe text-gold -->
+            <h4>MARCAS REPRESENTADAS</h4>
+            <div class="brands-grid">
+                <!-- Links envolvendo os logótipos -->
+                <a href="https://www.jasfrepresentantes.com/malu/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.ibb.co/PJRFzRd/MALU.png" alt="MALU">   <!-- MALU -->
+                </a>
+                <a href="https://www.bracell.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.bracell.com/wp-content/uploads/2019/04/bracell_logo_FA.png" alt="BRACELL"> <!-- BRACELL -->
+                </a>
+                <a href="https://www.catafesta.com.br/suco-de-frutas/catafesta" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.catafesta.com.br/static/images/logo.png" alt="CATAFESTA"> <!-- CATAFESTA -->
+                </a>
+                <a href="https://www.nazca.com.br/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://nazca.cdn.magazord.com.br/resources/logo.svg?v=b78d6b8f85366cf65a4e1e96186e77ac" alt="NAZCA"> <!-- NAZCA -->
+                </a>
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBx0Us0pgE_zNDsdHdpSbN-F8-ZLnCaJVEw&s" alt="DULAGO">   <!-- DULAGO -->
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="URL LOGO" alt=""> <!-- VAGO -->
+                </a>
+            </div>
+        </footer>
+
+        <!-- SEGUNDO BLOCO DE MARCAS -->
+        <footer class="footer-brands">
+            <h4>MARCAS DE EMBALAGENS</h4>
+            <div class="brands-grid">
+                <!-- Links envolvendo os logótipos -->
+                <a href="https://dokapack.vagas.solides.com.br/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/empresa/logo/71514/logomarca_2023_doka.png" alt="DOKAPACK"> <!-- DOKAPACK -->
+                </a>
+                <a href="https://raembalagens.com.br/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://raembalagens.com.br/wp-content/uploads/2025/03/sm-logo.png" alt="RA EMBALAGENS"> <!-- RA EMBALAGENS -->
+                </a>
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://muriel.com.br/wp-content/themes/muriel/source/img/logo-muriel.svg" alt="Premium resinas e bobinas"> <!-- Premium resinas e bobinas -->
+                </a>
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt=""> <!-- Emcasa embalagens -->
+                </a>
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">  <!-- VAGO -->
+                </a>
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt=""> <!-- VAGO -->
+                </a>
+            </div>
+        </footer>
+
+        <!-- REDES SOCIAIS -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/colins.representacoes?igsh=MXV6cGFpZ3F1ZDExbA%3D%3D" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/p%C3%BAblio-nogueira-9a1678262/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- SCRIPT REAL PARA GERAR E BAIXAR O CONTATO (vCard) -->
+    <script>
+        function baixarContato(event) {
+            event.preventDefault(); // Evita que a página role para o topo
+            
+            // Dados do contato para o vCard
+            const nomeCompleto = "Wemerson Colins";
+            const cargo = "Representante Comercial";
+            const empresa = "Colins Representações";
+            const telefone = "+5598981693939";
+            const email = "wemersoncolins@yahoo.cm.br";
+            const site = window.location.href; // Pega o link atual do cartão digital
+
+            // Monta a estrutura padrão do arquivo .vcf (vCard 3.0)
+            const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:${nomeCompleto}\nORG:${empresa}\nTITLE:${cargo}\nTEL;TYPE=cell,voice:${telefone}\nEMAIL;TYPE=work:${email}\nURL:${site}\nEND:VCARD`;
+
+            // Cria um objeto "Blob" que simula um arquivo de texto no formato vCard
+            const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+            
+            // Cria um link temporário na memória do navegador
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            
+            // Configura o link para apontar para o nosso arquivo e define o nome do download
+            link.href = url;
+            link.setAttribute('download', 'Colins.vcf');
+            
+            // Adiciona o link escondido na tela, "clica" nele automaticamente e depois o remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Libera a memória
+            setTimeout(() => URL.revokeObjectURL(url), 100);
+        }
+    </script>
+</body>
+</html>
